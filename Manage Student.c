@@ -241,7 +241,7 @@ int main()
     {
     printf("Please enter number with your statement you want\n");
     printf("0. Exit the programm\n");
-    printf("1. Enter student's information\n");
+    printf("1. Enter student's information ( If you want to add after enter, this key too\n");
     printf("2. Print student's information on screen\n");
     printf("3. Sort students rely on score from low to high\n");
     printf("4. Classify student\n");
@@ -260,7 +260,7 @@ int main()
             scanf("%d", &number);
             for(int i = 0 ; i < number ; i++ )
             {
-            printf("Enter information of student %d\n", i + 1);
+            printf("Enter information of student\n");
             enterData( &student );
             node = creatNode( student );
             addLast ( &list, node );
